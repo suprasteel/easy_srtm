@@ -1,5 +1,5 @@
 [package]
-name = "geodata"
+name = "srtmtiles"
 version = "0.1.0"
 edition = "2021"
 
@@ -9,6 +9,6 @@ edition = "2021"
 byteorder = "1.4"
 anyhow = "1.0"
 thiserror = "1.0"
+
+[dev-dependencies]
 dotenv = "0.15"
-env_logger = "0.9"
-log = "0.4"
