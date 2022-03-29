@@ -31,3 +31,14 @@ fn it_gets_the_right_elevation_from_file() {
             assert!(expect == h, "Failed for lat:{}, lng:{})", lat, lng);
         });
 }
+
+#[test]
+fn it_retrieves_heights_iterator() {
+    // let key = "HGT_TILES_FOLDER";
+    // let folder = dotenv::var(key).unwrap();
+    // let (from, to) = ((49.5, -1.7), (50.1, 0.4));
+    // let tiles = Tiles::new(folder);
+    // should return an iterator
+    // let geo_heights = tiles.elevations(from, to);
+    // let (latitude, longitude, height) = geo_heights.next();
+}

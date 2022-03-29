@@ -1,5 +1,5 @@
 //!
-//! # SRTMtiles - SRTM directory reader.
+//! # EasySrtm - SRTM directory reader.
 //!
 //! This library provides simple function to access SRTM files elevation from tiles stored in a directory.
 //! Its main purpose is the get the elevation directly from latitude and longitude information.
@@ -182,6 +182,11 @@ impl Tiles {
     }
 
     /// Returns the elevation (height) from latitude and longitude.
+    ///
+    /// This method return the elevation of the nearest point without the elevation's true
+    /// position.
+    /// This means that the same height is returned for a square around the true geoposition for
+    /// the height.
     pub fn elevation(&self, lat: f32, lng: f32) -> Result<i16> {
         let filename = srtm_file_name(lat, lng);
         let cachehit = self.handles.borrow().get(&filename).is_some();
@@ -207,8 +212,9 @@ impl Tiles {
         Ok(height)
     }
 
-    // Returns the list of points from given bounds
-    // elevetions
+    // TODO fn to return the interpolated (linear) height for this geoposition
+
+    // TODO fn to return the nearest geoposition having data and its height
 }
 
 // UNIT TESTS
