@@ -4,7 +4,7 @@
 //! This library provides simple function to access SRTM files elevation from tiles stored in a directory.
 //! Its main purpose is the get the elevation directly from latitude and longitude information.
 //!
-//! Note: to read height directly from file coordinates, use another library: https://github.com/grtlr/srtm .
+//! Note: to read height directly from file coordinates, use another library: `<https://github.com/grtlr/srtm>`.
 //!
 //! ## Usage
 //!
@@ -18,7 +18,7 @@
 //! 3. Use those files in your code with:
 //!
 //! ```
-//! use srtmtiles::Tiles;
+//! use easy_srtm::Tiles;
 //! // contains at least *N49W002.hgt* to retrieve (lat 49.1, lng -1.6)
 //! let folder = "the_foler_path";
 //! let (lat, lng) = (49.1, -1.6);
@@ -96,7 +96,7 @@ impl TryFrom<u64> for Resolution {
     /// # Example
     ///
     /// ```
-    /// use srtmtiles::Resolution;
+    /// use easy_srtm::Resolution;
     /// // get file size with `file.metadata()?.len()`
     /// let resolution = Resolution::try_from(3601 * 3601 * 2);
     /// assert_eq!(resolution.unwrap(), Resolution::SRTM1);
@@ -169,7 +169,7 @@ impl Tiles {
     /// # Examples
     ///
     /// ```
-    /// use srtmtiles::Tiles;
+    /// use easy_srtm::Tiles;
     /// let your_directory = "/dev/null";
     /// let tiles = Tiles::new(your_directory);
     ///

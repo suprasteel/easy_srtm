@@ -1,5 +1,5 @@
 use dotenv;
-use srtmtiles::Tiles;
+use easy_srtm::Tiles;
 
 /// Validates the elevetion retrieval.
 ///

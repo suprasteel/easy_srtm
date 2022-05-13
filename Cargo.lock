@@ -21,6 +21,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "77c90badedccf4105eca100756a0b1289e191f6fcbdadd3cee1d2f614f97da8f"
 
 [[package]]
+name = "easy_srtm"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "byteorder",
+ "dotenv",
+ "thiserror",
+]
+
+[[package]]
 name = "proc-macro2"
 version = "1.0.36"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -36,16 +46,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b4af2ec4714533fcdf07e886f17025ace8b997b9ce51204ee69b6da831c3da57"
 dependencies = [
  "proc-macro2",
-]
-
-[[package]]
-name = "srtmtiles"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "byteorder",
- "dotenv",
- "thiserror",
 ]
 
 [[package]]
