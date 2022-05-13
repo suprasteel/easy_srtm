@@ -15,7 +15,7 @@
 //!
 //! 2. Put tiles files in a folder
 //!
-//! 3. Use those files in yout code with:
+//! 3. Use those files in your code with:
 //!
 //! ```
 //! use srtmtiles::Tiles;
